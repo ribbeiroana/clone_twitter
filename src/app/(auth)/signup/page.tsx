@@ -1,5 +1,5 @@
-import { SignupForm } from '@/app/components/auth/signup-form';
-import { Logo } from '@/app/components/ui/logo';
+import { SignupForm } from '@/components/auth/signup-form';
+import { Logo } from '@/components/ui/logo';
 import Link from 'next/link';
 
 export default function Page() {
