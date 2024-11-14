@@ -3,7 +3,7 @@ import { GeneralHeaders } from '@/components/ui/general-header';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { user } from '@/data/user';
-import { faCamera, faLink, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faCamera, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Page() {
