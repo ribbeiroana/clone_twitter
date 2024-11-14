@@ -1,3 +1,4 @@
+import { ProfileFeed } from '@/components/profile/profile-feed';
 import { Button } from '@/components/ui/button';
 import { GeneralHeaders } from '@/components/ui/general-header';
 import { user } from '@/data/user';
@@ -12,7 +13,7 @@ export default function Page() {
     <div>
       <GeneralHeaders backHref='/' >
         <div className='font-bold text-lg'>{user.name}</div>
-        <div className='text-xs text-gray-500'>{user.postCount}posts</div>
+        <div className='text-xs text-gray-500'>{user.postCount} posts</div>
       </GeneralHeaders>
       <section className='border-b-2 border-gray-900'>
         <div className='bg-gray-500 h-28 bg-no-repeat bg-cover bg-center'
@@ -56,6 +57,7 @@ export default function Page() {
         </div>
 
       </section>
+      <ProfileFeed />
     </div>
   );
 }
