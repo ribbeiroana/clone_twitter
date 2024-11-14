@@ -1,10 +1,12 @@
 import { ReactNode } from 'react';
-import { Logo } from '../../components/ui/logo';
-import { NavItem } from '../../components/nav/nav-item';
+import { Logo } from '@/components/ui/logo';
+import { NavItem } from '@/components/nav/nav-item';
 import { faHouse, faUser } from '@fortawesome/free-solid-svg-icons';
-import { NavLogout } from '../../components/nav/nav-logout';
+import { NavLogout } from '@/components/nav/nav-logout';
 import { NavMyProfile } from '@/components/nav/nav-myprofile';
 import { SearchInput } from '@/components/ui/search-input';
+import { TrendingArea } from '@/components/ui/trending-area';
+import { RecommendationArea } from '@/components/ui/recommendation-area';
 
 type Props = {
   children: ReactNode;
@@ -45,6 +47,8 @@ export default function Layout({ children }: Props) {
 
       <aside className='flex lg:flex flex-col gap-6 sticky top-0 h-fit w-96 px-8 py-6 border-l-2 border-gray-900'>
         <SearchInput hideOnSearch />
+        <TrendingArea />
+        <RecommendationArea />
       </aside>
     </main>
   );
