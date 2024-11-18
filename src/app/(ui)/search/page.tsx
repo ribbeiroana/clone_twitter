@@ -23,7 +23,6 @@ export default function Page({ searchParams }: Props) {
         <TwitteItem tweet={tweet} />
         <TwitteItem tweet={tweet} />
       </div>
-
     </div>
   );
 }

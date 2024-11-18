@@ -10,8 +10,9 @@ import { useState } from 'react';
 
 type Props = {
   tweet: Tweet;
+  hiddenComents?: boolean;
 }
-export const TwitteItem = ({ tweet }: Props) => {
+export const TwitteItem = ({ tweet, hiddenComents }: Props) => {
   const [liked, setLiked] = useState(tweet.liked);
   const handleLikeButton = () => {
     setLiked(!liked);
@@ -48,15 +49,16 @@ export const TwitteItem = ({ tweet }: Props) => {
         }
 
         <div className='flex mt-6 text-gray-500'>
-          <div className='flex-1'>
-            <Link href={`/tweet/${tweet.id}`}>
-              <div className='inline-flex items-center gap-2 cursor-pointer'>
-                <FontAwesomeIcon icon={faComment} className='size-6' />
-                <div className='text-lg'>{tweet.commentCount}</div>
-              </div>
-            </Link>
-          </div>
-
+          {!hiddenComents &&
+            <div className='flex-1'>
+              <Link href={`/tweet/${tweet.id}`}>
+                <div className='inline-flex items-center gap-2 cursor-pointer'>
+                  <FontAwesomeIcon icon={faComment} className='size-6' />
+                  <div className='text-lg'>{tweet.commentCount}</div>
+                </div>
+              </Link>
+            </div>
+          }
           <div className='flex-1'>
             <div className='inline-flex items-center gap-2 cursor-pointer'>
               <FontAwesomeIcon icon={faRetweet} className='size-6' />
@@ -66,7 +68,7 @@ export const TwitteItem = ({ tweet }: Props) => {
 
           <div className='flex-1'>
             <div onClick={handleLikeButton} className={`inline-flex items-center gap-2 cursor-pointer ${liked && 'text-red-400'}`}>
-              <FontAwesomeIcon icon={liked ? faHaertFilled : faHeart } className='size-6' />
+              <FontAwesomeIcon icon={liked ? faHaertFilled : faHeart} className='size-6' />
               <div className='text-lg'>{tweet.likeCount}</div>
             </div>
           </div>
