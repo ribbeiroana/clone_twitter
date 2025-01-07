@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# clone_twitter
 
-## Getting Started
+Clone de uma interface do Twitter utilizando **Next.js**, **TailwindCSS** e **TypeScript**.
 
-First, run the development server:
+## 🔥 Introdução
 
-```bash
-npm run dev
-# or
+Este projeto é uma recriação da interface do Twitter, utilizando dados fictícios para simular a visualização de perfis e publicações. Ele foi desenvolvido com foco na performance e na utilização das melhores práticas de desenvolvimento front-end com **Next.js**.
+
+### ⚙️ Pré-requisitos
+
+Antes de rodar o projeto, você precisa garantir que as seguintes dependências estão instaladas:
+
+- **Node.js**: Para instalar o Node.js, siga o [link oficial](https://nodejs.org/).
+- **Yarn** (opcional, mas recomendado): Para instalar o Yarn, execute:  
+
+```
+npm install --global yarn
+```
+### 🔨 Guia de instalação
+
+1. Clone o repositório:
+
+```
+https://github.com/ribbeiroana/clone_twitter.git
+```
+2. Navegue até o diretório do projeto:
+
+```
+cd clone_twitter
+```
+3. Instale as dependências:
+   
+```
+npm install
+```
+ou, se estiver usando Yarn:
+
+```
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Agora, o projeto estará rodando em `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 Tecnologias usadas:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-## Learn More
+* ![Next.js](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+* ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-%23007ACC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+* ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 
-To learn more about Next.js, take a look at the following resources:
+**Stacks:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Front-end:**
+* [Next.js](https://nextjs.org/)
+* [TailwindCSS](https://tailwindcss.com/)
+* [React](https://react.dev/)
+* [Font Awesome](https://fontawesome.com/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Dependências:**
+* [TypeScript](https://www.typescriptlang.org/)
+* [PostCSS](https://postcss.org/)
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 💡 Expressões de gratidão
+* Agradecemos à comunidade **Next.js** e **TailwindCSS** pelos ótimos frameworks.
+* [Meu LinkedIn](https://br.linkedin.com/in/ribbeiroana) para mais informações.
